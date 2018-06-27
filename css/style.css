@@ -39,7 +39,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -62,8 +64,12 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 0;
   padding: 0;
 
@@ -128,8 +134,12 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -240,8 +250,11 @@ input[type="radio"].visually-hidden {
 }
 
 .specials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin: 0;
   margin-bottom: 105px;
@@ -251,6 +264,8 @@ input[type="radio"].visually-hidden {
 }
 
 .special-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -289,7 +304,8 @@ input[type="radio"].visually-hidden {
 
   width: 216px;
   padding: 0 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   background-color: #f8f8f8;
 }
@@ -409,8 +425,12 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
@@ -434,9 +454,13 @@ input[type="radio"].visually-hidden {
 
 .menu-wrapper {
   position: absolute;
-  z-index: 1
+  z-index: 1;
   top: 300px;
   left: 0;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
 
   display: flex;
 
@@ -458,8 +482,11 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin-bottom: 40px;
 }
@@ -475,7 +502,9 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-item .menu-dotted-line {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   line-height: 16px;
 
   border-bottom: 2px dotted #3c3c3c;
@@ -536,8 +565,12 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 570px;
   margin-left: auto;
   margin-bottom: 100px;
@@ -562,9 +595,14 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 570px;
   margin-left: auto;
   margin-bottom: 80px;
@@ -583,7 +621,8 @@ input[type="radio"].visually-hidden {
 .contact-form input[type="text"] {
   width: 255px;
   padding: 10px 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   font-style: italic;
   font-size: 18px;
@@ -599,6 +638,27 @@ input[type="radio"].visually-hidden {
   margin-top: 60px;
   margin-bottom: 55px;
   width: 570px;
+}
+
+.contact-form input[type="text"]::-webkit-input-placeholder {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 200;
+  color: #3c3c3c;
+}
+
+.contact-form input[type="text"]:-ms-input-placeholder {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 200;
+  color: #3c3c3c;
+}
+
+.contact-form input[type="text"]::-ms-input-placeholder {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 200;
+  color: #3c3c3c;
 }
 
 .contact-form input[type="text"]::placeholder {
@@ -622,8 +682,12 @@ input[type="radio"].visually-hidden {
 }
 
 .social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 0;
   padding: 0;
 
