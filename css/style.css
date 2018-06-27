@@ -52,7 +52,7 @@ input[type="radio"].visually-hidden {
 /* ====== HEADER ====== */
 
 .main-header {
-  min-height: 965px;
+  min-height: 750px;
 
   background-color: #f7f8f8;
   background-image: url(../img/header-background.jpg);
@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
 
 .tagline {
   position: relative;
-  top: 280px;
+  top: 200px;
   left: 740px;
 
   margin: 0;
@@ -373,6 +373,12 @@ input[type="radio"].visually-hidden {
 
 /* ====== MENU ====== */
 
+.menu {
+  position: relative;
+
+  min-height: 850px;
+}
+
 .menu h2 {
   position: relative;
 
@@ -427,13 +433,24 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-wrapper {
+  position: absolute;
+  z-index: 1
+  top: 300px;
+  left: 0;
+
   display: flex;
-  justify-content: space-between;
+
+  background-color: #ffffff;
+}
+
+.menu-show {
+  z-index: 2;
 }
 
 .menu-list {
   margin: 0;
   margin-bottom: 40px;
+  margin-right: 30px;
   padding: 0;
   width: 635px;
 
@@ -481,7 +498,7 @@ input[type="radio"].visually-hidden {
 /* ====== CONTACT ====== */
 
 .contact {
-  min-height: 940px;
+  min-height: 870px;
 
   background-color: #e9eaeb;
   background-image: url(../img/contact-background.jpg);
@@ -550,7 +567,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 570px;
   margin-left: auto;
-  margin-bottom: 170px;
+  margin-bottom: 80px;
 }
 
 .contact-form p {
