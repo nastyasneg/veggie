@@ -1,5 +1,9 @@
 /* ====== GLOBAL ====== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -79,7 +83,6 @@ input[type="radio"].visually-hidden {
 
 }
 
-.site-item-current,
 .site-item:hover,
 .site-item:active {
   outline: 1px solid #686868;
@@ -253,7 +256,7 @@ input[type="radio"].visually-hidden {
 
 .special-item h3 {
 
-  width: 176px;
+  width: 186px;
   margin: 0;
   margin-bottom: 30px;
   margin-top: 40px;
@@ -419,9 +422,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.toggle-item-current,
-.toggle-item:hover,
-.toggle-item:active {
+.toggle-item-current {
   outline: 1px solid #686868;
 }
 
